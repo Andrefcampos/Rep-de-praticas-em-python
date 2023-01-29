@@ -1,6 +1,7 @@
 '''programa que leia 6 números inteiros
 - mostrar a soma apenas dos pares
 - se o valor digitado for impar, desconsiderar.'''
+print('Digite 6 números e o programa irá identificar os pares e somar. Os impares serão descartados.')
 soma = 0
 cont = 0
 for i in range (1,7):
