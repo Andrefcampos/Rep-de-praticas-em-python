@@ -1,4 +1,3 @@
-from math import factorial
 num = int(input('Digite um número: '))
 fatorial = 1
 cont = num
