@@ -1,3 +1,8 @@
+'''Programa que simula um caixa eletrônico:
+- informar valor para saque;
+- disponibilzar apenas notas de 50, 20, 10, 1;
+- contabilizar quantas notas de cada valor foi utilizado.'''
+
 print('==' * 20)
 print('{:-^40}'.format('BANCO MALCON X'))
 print('==' * 20)
