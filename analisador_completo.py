@@ -7,11 +7,8 @@ mostrar:
 - idade do homem mais velho
 - quantas mulheres tem menos de 20 anos.
 '''
-soma_idade = 0
-media_idade = 0
-maior_idade_homem = 0
+soma_idade = media_idade = maior_idade_homem = soma_mulher = 0
 nome_mais_velho = ''
-soma_mulher = 0
 for i in range (1, 5):
     print('----- {}ª PESSOA -----'.format(i))
     nome = str(input('Nome: '))
