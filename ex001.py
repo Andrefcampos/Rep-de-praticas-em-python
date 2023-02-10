@@ -22,3 +22,4 @@ print(f'O menor valor foi {min} na posição ', end='')
 for pos, i in enumerate(valores):
     if i == min:
         print(f'{pos}...', end='')
+        
