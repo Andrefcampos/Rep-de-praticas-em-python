@@ -17,4 +17,3 @@ if cont_a == cont_f:
     print('Essa expressão é válida.')
 else:
     print('Essa expressão é inválida.')
-
