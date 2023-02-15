@@ -13,3 +13,4 @@ for i in range (0, 3):
     for c in range(0, 3):
         print(f'[{list[i][c]:^5}]', end='')
     print()
+    
