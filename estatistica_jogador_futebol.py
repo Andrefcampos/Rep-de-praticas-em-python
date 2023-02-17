@@ -4,6 +4,7 @@
 - quantos gols em cada partida
 - adicionar em um dicionário
 - incluir total de gols'''
+from time import sleep
 print('='*40)
 print(f'{"FICHA TÉCNICA JOGADOR":^40}')
 print('='*40)
@@ -17,7 +18,14 @@ for i in range(0, total):
 jogador['gols'] = gol
 jogador['total'] = sum(gol)
 print('=' * 30)
+sleep(1)
 for k, v in jogador.items():
     print(f'  - {k}: {v}')
+    sleep(1)
 print('='*30)
-print(f'O jogador {jogador["nome"]} jogou {total} partidas e marcou no total {jogador["total"]} gols.')
+sleep(1)
+print(f'O jogador {jogador["nome"]} jogou {len(jogador["gols"])} partidas.')
+for i, v in enumerate(gol):
+    print(f' => Na partida {i + 1} fez {v} gols.')
+    sleep(1)
+print(f'No total de {jogador["total"]} gols.')
