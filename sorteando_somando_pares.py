@@ -9,11 +9,14 @@ def sorteio():
     print(f'Os números sorteados foram: ', end='')
     for i in range(1, 6):
         i = randint(1, 10)
+        sleep(0.5)
         print(i, end=' ')
         numeros.append(i)
+    sleep(0.5)
     print('...PRONTO!')
 def somaPar():
     print(f'Somando os valores pares de {numeros}, temos ', end='')
+    sleep(0.5)
     soma = 0
     for i in numeros:
         if i % 2 == 0:
@@ -21,4 +24,5 @@ def somaPar():
     print(soma)
 numeros = []
 sorteio()
+sleep(1)
 somaPar()
