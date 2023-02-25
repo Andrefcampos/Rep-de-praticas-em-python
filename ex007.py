@@ -5,12 +5,12 @@
     - negado
     - opcional
     - obrigatório'''
-from datetime import date
 def voto(ano):
+    from datetime import date
     hoje = date.today().year
     idade = hoje - ano
-    if idade >= 16:
-        if idade >= 18:
+    if 16 <= idade <= 65:
+        if 18 <= idade <= 65:
             return print('OBRIGATÓRIO')
         else:
             return print('OPCIONAL')
