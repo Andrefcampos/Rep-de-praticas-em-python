@@ -30,4 +30,5 @@ def notas(*num, show=False):
 
 resp = notas(9.5, 5.5, 2.5, 8.5, show=True)
 print(resp)
-help(notas)
+help(notas
+     
