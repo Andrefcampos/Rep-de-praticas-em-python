@@ -1,6 +1,10 @@
-
-
 def dobro(preço=0, formato=False):
+    """
+    -> Função para calcular o dobro do valor informado.
+    :param preço: Vaalor da moeda informado;
+    :param formato: Parametro para formatação do valor em moedas;
+    :return: Resultado da operção (dobro)
+    """
     res = preço * 2
     return res if not formato else moeda(res)
 
