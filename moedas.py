@@ -1,26 +1,23 @@
-'''Módulo chamado moedas.py que tenha as funções incorporadas:
-- aumentar()
-- diminuir()
-- dobro()
-- metade()
- -> Criar programa que utilize essas funções importando esse módulo.'''
-
-
-def dobro(preço):
+def dobro(preço=0):
     res = preço * 2
     return res
 
 
-def metade(preço):
+def metade(preço=0):
     res = preço / 2
     return res
 
 
-def aumentar(preço):
-    res = preço * 1.1
+def aumentar(preço=0, taxa=0):
+    res = preço * (taxa / 100)
     return res
 
 
-def diminuir(preço):
-    res = preço / 1.1
+def diminuir(preço=0, taxa=0):
+    res = preço - (preço * taxa / 100)
     return res
+
+
+def moeda(preço=0, moeda='R$'):
+    return f'{moeda}{preço:.2f}'.replace('.', ',')
+ 
